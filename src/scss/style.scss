@@ -22,3 +22,13 @@ header {
     color: rgb(45, 138, 184);
   }
 }
+
+.crepe-menu {
+  ul {
+    list-style-type: none;
+
+    .menu-item {
+      font-weight: bolder;
+    }
+  }
+}
