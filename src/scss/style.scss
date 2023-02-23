@@ -31,24 +31,26 @@ header {
       font-weight: bolder;
     }
   }
+
   .info-div {
     position: relative;
-    }
-    .info-section {
-    background-color: rgb(209, 223, 230);
-    display: flex;
-    position: relative;
-    width: 80%;
-    left: 10%;
-    width: 75vw;
-    border: solid, 2px black;
-    border-radius: 10px;
-    }
-    .info-heading {
-    padding-left: 20px;
-    padding-right: 20px;
-    }
-    .info-p {
-    padding-left: 20px;
-    padding-right: 20px;
-    }
+  }
+  .info-section {
+  background-color: rgb(209, 223, 230);
+  display: flex;
+  position: relative;
+  width: 80%;
+  left: 10%;
+  width: 75vw;
+  border: solid, 2px black;
+  border-radius: 10px;
+  }
+  .info-heading {
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+  .info-p {
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+}
