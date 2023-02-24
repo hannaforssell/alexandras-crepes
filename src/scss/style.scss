@@ -2,17 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .info-div {
   position: relative;
 }
 
+.hoverUnderline {
+  font-size: 1.5rem /* 24px */;
+  line-height: 2rem /* 32px */;
+  display: inline-block;
+  padding-bottom: 3px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.hoverUnderline:hover {
+  color: #6cc9f4;
+}
+
+.hoverUnderline:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  border-bottom: 2px solid #6cc9f4;
+  transition: all 0.3s;
+}
+
+.hoverUnderline:hover::before {
+  width: 100%;
+}
+
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
 }
 section {
   max-width: 70%;
@@ -20,14 +46,12 @@ section {
 }
 
 .info-section {
-    background-color: rgb(209, 223, 230);
-
+  background-color: rgb(209, 223, 230);
 }
 
 .hidden {
   display: none;
 }
-
 
 body {
   background-image: url("./src/images/background-pastel.webp");
