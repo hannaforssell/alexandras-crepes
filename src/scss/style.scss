@@ -14,6 +14,10 @@
     border-radius: 10px;
 }
 
+.hidden{
+    display: none;
+}
+
 .info-heading {
     padding-left: 20px;
     padding-right: 20px;
@@ -24,7 +28,7 @@
     padding-right: 20px;
 }
 body {
-  background-image: url("/public/background-pastel.webp");
+  background-image: url("./src/images/background-pastel.webp");
   background-color: #cccccc;
 }
 
