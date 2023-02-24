@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   </head>
   
-  <body>
+  <body">
     <header>
       <h1>Alexandras Crepes
         <span class="material-symbols-outlined">
@@ -50,10 +50,15 @@
         </div>  
       </section>
       <section>Meny</section>
-      <section>Slideshow</section>
+      <section class="sliderContainer">Slideshow
+        <img id="images1" class="hidden" src="./src/Images/bild1.jpg" width="400" height="500" alt="Kreps">
+        <img id="images2" src="./src/Images/bild2.jpg" width="400" height="500" alt="Kreps">
+
+        <button class="right">next</button>
+        <button class="left">prev</button>
+      </section>
     </main>
     <footer></footer>
-    <div id="app"></div>
     <script type="module" src="./src/ts/main.ts"></script>
   </body>
 </html>
