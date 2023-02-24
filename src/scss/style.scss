@@ -69,16 +69,27 @@ header {
 
   h1 {
     font-family: "Parisienne", cursive;
-
-    .material-symbols-outlined {
-      font-size: 4rem;
-    }
   }
+
   a {
     margin: 0 10px;
     color: black;
     text-decoration: none;
   }
+
+  nav {
+    margin-bottom: 2%;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crepsInMenu {
+  height: 8rem;
 }
 
 .crepe-menu {
