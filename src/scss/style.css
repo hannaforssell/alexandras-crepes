@@ -1,36 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .info-div {
   position: relative;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+
+section {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
 .info-section {
   background-color: rgb(209, 223, 230);
-  display: flex;
-  position: relative;
-  width: 80%;
-  left: 10%;
-  width: 75vw;
-  border: solid, 2px black;
-  border-radius: 10px;
 }
 
 .hidden {
   display: none;
 }
 
-.info-heading {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.info-p {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 body {
   background-image: url("./src/images/background-pastel.webp");
   background-color: #cccccc;
   margin: 0%;
+  background-size: cover;
+  overflow-x: hidden;
 }
 
 header {
@@ -89,4 +90,31 @@ header nav {
 .crepe-menu .info-p {
   padding-left: 20px;
   padding-right: 20px;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
+.crepe-menu ul {
+  list-style-type: none;
+}
+.crepe-menu ul .menu-item {
+  font-weight: bolder;
+}
+.crepe-menu .info-div {
+  position: relative;
+}
+.crepe-menu .info-section {
+  background-color: rgb(209, 223, 230);
+  display: flex;
+  position: relative;
+  width: 80%;
+  left: 10%;
+  width: 75vw;
+  border: solid, 2px black;
+  border-radius: 10px;
+}
+.crepe-menu .info-heading {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.crepe-menu .info-p {
+  padding-left: 20px;
+  padding-right: 20px;
+} /*# sourceMappingURL=style.css.map */
