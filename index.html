@@ -50,12 +50,18 @@
         </div>  
       </section>
       <section>Meny</section>
-      <section class="sliderContainer">Slideshow
-        <img id="images1" class="hidden" src="./src/Images/bild1.jpg" width="400" height="500" alt="Kreps">
-        <img id="images2" src="./src/Images/bild2.jpg" width="400" height="500" alt="Kreps">
+      <section class="w-screen">
+        <div class="w-1/2 p-10 bg-slate-50 bg-opacity-40 rounded-3xl flex justify-center items-center flex-col gap-6 mx-auto">
+          <h2 class="text-6xl">Slideshow</h2>
 
-        <button class="right">next</button>
-        <button class="left">prev</button>
+          <img id="images1" class="max-h-[370px]" src="./src/Images/bild1.jpg" width="400" height="500" alt="Kreps">
+          <img id="images2" class="max-h-[370px] hidden" src="./src/Images/bild2.jpg" width="400" height="500" alt="Kreps">
+
+          <div class="flex gap-6">
+            <button class="right p-4 w-24 shadow-xl bg-blue-800 text-white rounded-xl">prev</button>
+            <button class="left p-4 w-24 shadow-xl bg-blue-800 text-white rounded-xl">next</button>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
