@@ -13,41 +13,60 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   </head>
   
-  <body>
+  <body">
     <header>
-      <h1>Alexandras Crepes
-        <span class="material-symbols-outlined">
-          restaurant
+      <div class="title">
+        <h1 class="">Alexandras Crepes</h1>
+        <span>
+          <img class="crepsInMenu" src="./public/crepes1-removebg-preview.png" alt="">
         </span>
-      </h1>
+      </div>
       <nav>
-        <a href="#home">HEM</a>
-        <a href="#crepesMenu">CREPES-MENY</a>
-        <a href="#slideShow">SLIDESHOW</a>
+        <a href="#home" class="hoverUnderline">HEM</a>
+        <a href="#crepesMenu" class="hoverUnderline">CREPES-MENY</a>
+        <a href="#slideShow" class="hoverUnderline">SLIDESHOW</a>
       </nav>
     </header>
 
-    <main>
-      <section class="info-section">
+    <main class="w-screen">
+      <section class="info-section rounded-xl p-4 w-1/2">
         <div class="info-div">
-          <h2 class="info-heading">Om Caféet</h2>
+          <h2 class="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">Om Caféet</h2>
           <p class="info-p">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>  
       </section>
       <section class="crepe-menu">
-        <h3>Menu!</h3>
+        <h3 class="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">Menu!</h3>
         <ul>
-          <li><span  class="menu-item">Italian.</span> Burrata, prosciutto, pesto, cocktailtomater och ost.</li>
+          <li><span class="menu-item">Italian.</span> Burrata, prosciutto, pesto, cocktailtomater och ost.</li>
           <li><span class="menu-item">Strawberry.</span> Choklad, jordgubbar, krossade kakor och vaniljglass.</li>
           <li><span class="menu-item">Caesar.</span> Kyckling, caesardressing, bacon, sallad, parmesanost och krutonger.</li>
           <li><span class="menu-item">Chocolate.</span> Choklad, banan, krossade kakor och chokladglass.</li>
         </ul>
       </section>
+      <section class="info-section rounded-xl p-4 w-1/2">
+        <div class="info-div rounded-xl">
+          <h2 class="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">Om Caféet</h2>
+          <p class="info-p" >Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>  
+      </section>
+      <h2 class="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">Meny</h2>
+      <section class="w-screen">
+        <div class="w-1/2 p-10 bg-slate-50 bg-opacity-40 rounded-3xl flex justify-center items-center flex-col gap-6 mx-auto">
+          <h2 class="text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-br from-teal-500 to-amber-500">Slideshow</h2>
+      
+     
+          <img id="images1" class="max-h-[370px]" src="./src/Images/bild1.jpg" width="400" height="500" alt="Kreps">
+          <img id="images2" class="max-h-[370px] hidden" src="./src/Images/bild2.jpg" width="400" height="500" alt="Kreps">
 
-      <section>Slideshow</section>
+          <div class="flex gap-6">
+            <button class="right p-4 w-24 shadow-xl bg-blue-800 text-white rounded-xl">Föregående</button>
+            <button class="left p-4 w-24 shadow-xl bg-blue-800 text-white rounded-xl">Nästa</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
-    <div id="app"></div>
     <script type="module" src="./src/ts/main.ts"></script>
   </body>
 </html>
